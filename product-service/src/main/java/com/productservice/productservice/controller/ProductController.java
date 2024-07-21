@@ -41,7 +41,6 @@ public class ProductController {
     }
 
 
-
     @GetMapping("/product")
     @ResponseStatus(HttpStatus.OK)
     public Product getProductById(@RequestBody String productId) {
@@ -174,7 +173,5 @@ public class ProductController {
     public List<Product> searchProduct(@RequestParam String query) {
         return  productService.searchProduct(query.toLowerCase());
     }
-
-
 }
 
